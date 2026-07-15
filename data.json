@@ -1,0 +1,231 @@
+{
+  "categories": [
+    {
+      "id": "cat-1",
+      "name": "Smart Watches",
+      "slug": "smart-watches",
+      "imageUrl": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?auto=format&fit=crop&w=150&q=80"
+    },
+    {
+      "id": "cat-2",
+      "name": "Wireless Earbuds",
+      "slug": "wireless-earbuds",
+      "imageUrl": "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?auto=format&fit=crop&w=150&q=80"
+    },
+    {
+      "id": "cat-3",
+      "name": "Mobile Accessories",
+      "slug": "mobile-accessories",
+      "imageUrl": "https://images.unsplash.com/photo-1622445262465-2481c4574875?auto=format&fit=crop&w=150&q=80"
+    },
+    {
+      "id": "cat-4",
+      "name": "Men's Fashion",
+      "slug": "mens-fashion",
+      "imageUrl": "https://images.unsplash.com/photo-1581655353564-df123a1eb820?auto=format&fit=crop&w=150&q=80"
+    },
+    {
+      "id": "cat-5",
+      "name": "Home & Living",
+      "slug": "home-and-living",
+      "imageUrl": "https://images.unsplash.com/photo-1578857987181-63e8b39a72e5?auto=format&fit=crop&w=150&q=80"
+    }
+  ],
+  "products": [
+    {
+      "id": "prod-1",
+      "categoryId": "cat-1",
+      "title": "Smart Watch Ultra 9",
+      "sku": "SW-ULT9",
+      "regularPrice": 4500,
+      "salePrice": 2899,
+      "stockCount": 45,
+      "description": "A high-fidelity premium smart watch with 2.0-inch AMOLED display, heart rate and blood oxygen monitoring, multi-sport tracking, smart bluetooth calling, wireless charger, and elegant alloy frame.",
+      "sizes": "49mm,45mm",
+      "colors": "Orange,Black,Silver",
+      "isFlashSale": true,
+      "flashSaleProgress": 60,
+      "imageUrl": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?auto=format&fit=crop&w=600&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?auto=format&fit=crop&w=600&q=80",
+        "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=600&q=80"
+      ],
+      "rating": 4.8,
+      "brand": "Siemens",
+      "subCategory": "AC"
+    },
+    {
+      "id": "prod-2",
+      "categoryId": "cat-2",
+      "title": "M10 TWS Wireless Earbuds",
+      "sku": "EAR-M10",
+      "regularPrice": 2500,
+      "salePrice": 1249,
+      "stockCount": 18,
+      "description": "Bluetooth 5.1 Stereo earbuds equipped with a massive 2000mAh charging case that can also charge your phone! Features dual digital LED battery indicators, IPX7 waterproof rating, touch control, and high bass acoustics.",
+      "sizes": "Standard",
+      "colors": "Black",
+      "isFlashSale": true,
+      "flashSaleProgress": 88,
+      "imageUrl": "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?auto=format&fit=crop&w=600&q=80",
+      "gallery": [],
+      "rating": 4.5,
+      "brand": "Schneider",
+      "subCategory": "DC"
+    },
+    {
+      "id": "prod-3",
+      "categoryId": "cat-3",
+      "title": "GaN 65W Multi-Port Fast Charger",
+      "sku": "CHG-65W",
+      "regularPrice": 2000,
+      "salePrice": 1399,
+      "stockCount": 75,
+      "description": "Advanced Gallium Nitride (GaN) technology provides powerful 65W high speed output for notebooks, iPhones, iPads, and Android devices. Built-in safeguards protect your devices against excessive current, overheating, and overcharging.",
+      "sizes": "Standard US",
+      "colors": "Black,White",
+      "isFlashSale": false,
+      "flashSaleProgress": 0,
+      "imageUrl": "https://images.unsplash.com/photo-1622445262465-2481c4574875?auto=format&fit=crop&w=600&q=80",
+      "gallery": [],
+      "rating": 4.7,
+      "brand": "ABB",
+      "subCategory": "AC"
+    },
+    {
+      "id": "prod-4",
+      "categoryId": "cat-4",
+      "title": "Premium Slim-Fit Cotton Polo",
+      "sku": "FSH-POLO",
+      "regularPrice": 1999,
+      "salePrice": 1450,
+      "stockCount": 110,
+      "description": "Crafted from highly breathable combed cotton pique. This Alladin style regular slim-fit polo features classic rib knit collar, double button placket, short sleeves, and standard athletic stitching.",
+      "sizes": "S,M,L,XL",
+      "colors": "Emerald Green,Navy Blue,Charcoal Gray",
+      "isFlashSale": false,
+      "flashSaleProgress": 0,
+      "imageUrl": "https://images.unsplash.com/photo-1581655353564-df123a1eb820?auto=format&fit=crop&w=600&q=80",
+      "gallery": [],
+      "rating": 4.6,
+      "brand": "Terasaki",
+      "subCategory": "DC"
+    },
+    {
+      "id": "prod-5",
+      "categoryId": "cat-5",
+      "title": "Rechargeable Portable Smoothie Blender",
+      "sku": "HL-BLND",
+      "regularPrice": 3800,
+      "salePrice": 2499,
+      "stockCount": 24,
+      "description": "A compact personal juice extractor with 6 ultra-sharp stainless steel blades, high rotation speed, built-in 4000mAh rechargeable lithium battery, security safety lock, and food-grade BPA-free plastic construction.",
+      "sizes": "400ml",
+      "colors": "Pink,Mint Green,Sky Blue",
+      "isFlashSale": false,
+      "flashSaleProgress": 0,
+      "imageUrl": "https://images.unsplash.com/photo-1578857987181-63e8b39a72e5?auto=format&fit=crop&w=600&q=80",
+      "gallery": [],
+      "rating": 4.4,
+      "brand": "Hager",
+      "subCategory": "AC"
+    }
+  ],
+  "orders": [
+    {
+      "id": "ORD-94812",
+      "customerName": "Zain Ali",
+      "customerEmail": "zain.ali@example.com",
+      "customerPhone": "03123456789",
+      "customerAddress": "Flat 4B, Mehran Heights, Block 5, Gulshan-e-Iqbal",
+      "customerCity": "Karachi",
+      "paymentMethod": "COD",
+      "totalAmount": 4148,
+      "status": "Pending",
+      "orderDate": "2026-07-03T18:42:00Z",
+      "items": [
+        {
+          "productId": "prod-1",
+          "productTitle": "Smart Watch Ultra 9",
+          "sku": "SW-ULT9",
+          "quantity": 1,
+          "price": 2899
+        },
+        {
+          "productId": "prod-2",
+          "productTitle": "M10 TWS Wireless Earbuds",
+          "sku": "EAR-M10",
+          "quantity": 1,
+          "price": 1249
+        }
+      ],
+      "trackingNumber": "123456789",
+      "trackingCompany": "TCS"
+    }
+  ],
+  "banners": {
+    "heroSliders": [
+      {
+        "image": "https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1600&q=80",
+        "title": "AL-LADIN GRAND FESTIVAL",
+        "subtitle": "Unbelievable Discounts on Trending Smart Gadgets & Lifestyle Products"
+      },
+      {
+        "image": "https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?auto=format&fit=crop&w=1600&q=80",
+        "title": "UP TO 60% OFF FLASH SALES",
+        "subtitle": "Hottest Mobile Accessories and Gadgets are Now Within Your Budget"
+      },
+      {
+        "image": "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1600&q=80",
+        "title": "ELEGANT MEN'S FASHION",
+        "subtitle": "Discover Premium Quality Shirts, Trousers & Smart Apparel"
+      },
+      {
+        "image": "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1600&q=80",
+        "title": "MODERN HOME & LIVING",
+        "subtitle": "Upgrade Your Space with Cozy Lights, Organizers & Smart Kitchenware"
+      },
+      {
+        "image": "https://images.unsplash.com/photo-1546435770-a3e426bf472b?auto=format&fit=crop&w=1600&q=80",
+        "title": "PREMIUM SOUND EXPERIENCE",
+        "subtitle": "Immerse Yourself in High-Fidelity Wireless Audio with Active Noise Cancellation"
+      }
+    ],
+    "sideBanners": [
+      {
+        "image": "https://images.unsplash.com/photo-1511556532299-8f662fc26c06?auto=format&fit=crop&w=600&h=800&q=80",
+        "link": "#"
+      },
+      {
+        "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=600&h=800&q=80",
+        "link": "#"
+      }
+    ],
+    "contactInfo": {
+      "phone": "+92 300 1234567",
+      "email": "support@alladin.pk",
+      "address": "Building 45-C, Lane 5, Bukhari Commercial, Phase 6, DHA, Karachi, Pakistan"
+    },
+    "announcementText": "Free delivery on orders above Rs. 5,000!",
+    "announcementSpeed": 6,
+    "announcementDirection": "right",
+    "flashSaleEndTime": "2026-07-10T18:00:00.000Z"
+  },
+  "admins": [
+    {
+      "username": "admin",
+      "password": "admin",
+      "email": "admin@alladin.pk",
+      "fullName": "Store Administrator"
+    },
+    {
+      "username": "pos",
+      "password": "pos",
+      "email": "pos@alladin.pk",
+      "fullName": "POS Operator"
+    }
+  ],
+  "posTransactions": [],
+  "posCustomers": [],
+  "posExpenses": []
+}

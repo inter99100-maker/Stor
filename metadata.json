@@ -1,0 +1,6 @@
+{
+  "name": "Alladin E-Commerce",
+  "description": "A high-fidelity clone of Alladin.pk featuring a responsive main storefront, categories mega-menu, flash sales countdown, search, product details, sliding cart, cash-on-delivery checkout, and a fully functional Admin Panel for products, categories, orders, and banner settings.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
