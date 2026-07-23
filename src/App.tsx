@@ -63,6 +63,7 @@ export default function App() {
 
   // Order Tracking UI states
   const [isTrackModalOpen, setIsTrackModalOpen] = useState(false);
+  const [isCodPolicyModalOpen, setIsCodPolicyModalOpen] = useState(false);
   const [trackOrderId, setTrackOrderId] = useState("");
   const [trackedOrderResult, setTrackedOrderResult] = useState<Order | null>(null);
   const [trackSearched, setTrackSearched] = useState(false);
@@ -1167,7 +1168,7 @@ export default function App() {
           <div className="space-y-3">
             <h4 className="text-white font-extrabold text-sm uppercase tracking-wider font-display">Customer Relations</h4>
             <ul className="space-y-2 font-semibold">
-              <li className="hover:text-white transition-colors cursor-pointer">Cash on Delivery Policy</li>
+              <li onClick={() => setIsCodPolicyModalOpen(true)} className="hover:text-white transition-colors cursor-pointer">Cash on Delivery Policy</li>
               <li className="hover:text-white transition-colors cursor-pointer">7-Day Return and Exchange</li>
               <li className="hover:text-white transition-colors cursor-pointer">Terms and Conditions</li>
               <li className="hover:text-white transition-colors cursor-pointer">Shipping Coverage Zones</li>
@@ -1507,6 +1508,98 @@ export default function App() {
                 </div>
               )}
 
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* 5. COD Policy Modal */}
+      {isCodPolicyModalOpen && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
+          <div className="absolute inset-0 bg-slate-900/60 backdrop-blur-sm" onClick={() => setIsCodPolicyModalOpen(false)} />
+          <div className="relative bg-white rounded-3xl shadow-2xl w-full max-w-2xl max-h-[90vh] flex flex-col overflow-hidden animate-in zoom-in-95 duration-200">
+            {/* Modal Header */}
+            <div className="flex items-center justify-between p-6 border-b border-slate-100 bg-slate-50">
+              <div className="space-y-1">
+                <h3 className="text-xl font-black text-slate-900 font-display flex items-center gap-2">
+                  <span>Cash on Delivery (COD) Policy</span>
+                </h3>
+                <p className="text-[11px] font-bold text-slate-500 uppercase tracking-widest">
+                  NEPH | Operational Guidelines for Pakistan
+                </p>
+              </div>
+              <button
+                onClick={() => setIsCodPolicyModalOpen(false)}
+                className="w-10 h-10 rounded-full bg-white border border-slate-200 text-slate-400 hover:text-slate-700 hover:bg-slate-100 flex items-center justify-center transition-all shadow-sm"
+              >
+                <X className="w-5 h-5" />
+              </button>
+            </div>
+
+            {/* Modal Content */}
+            <div className="p-6 overflow-y-auto custom-scrollbar space-y-6 text-slate-700 text-sm">
+              <div className="space-y-4 leading-relaxed font-medium">
+                <p>
+                  At <strong className="font-extrabold">Numan Electric and Pneumatic House (NEPH)</strong>, we are pleased to offer a nationwide Cash on Delivery (COD) service across Pakistan to ensure a safe, convenient, and reliable shopping experience for our customers. Please read our COD operational guidelines carefully before placing an order.
+                </p>
+
+                <div className="bg-orange-50 border border-orange-200 rounded-2xl p-4">
+                  <h4 className="font-extrabold text-orange-900 mb-2 flex items-center gap-2">
+                    <CheckCircle2 className="w-4 h-4 text-orange-600" />
+                    Eligible Locations
+                  </h4>
+                  <p className="text-orange-800 text-[13px]">
+                    Our COD service is currently active and available across all major cities and documented postal zones in Pakistan (including Karachi, Lahore, Islamabad, Rawalpindi, Faisalabad, Multan, and Peshawar). Some remote areas may be restricted by our courier partners.
+                  </p>
+                </div>
+
+                <div className="space-y-3">
+                  <h4 className="font-extrabold text-slate-900 border-b border-slate-100 pb-2">1. Order Value Limits</h4>
+                  <ul className="list-disc pl-5 space-y-1 text-slate-600">
+                    <li>COD is applicable for orders with a maximum invoice value of <strong>Rs. 50,000/-</strong>.</li>
+                    <li>For high-value industrial equipment or bulk orders exceeding this limit, an advance deposit of 20% to 50% via Bank Transfer/JazzCash/EasyPaisa may be required before dispatch.</li>
+                  </ul>
+                </div>
+
+                <div className="space-y-3">
+                  <h4 className="font-extrabold text-slate-900 border-b border-slate-100 pb-2">2. Order Verification Process</h4>
+                  <ul className="list-disc pl-5 space-y-1 text-slate-600">
+                    <li>Once an order is placed on our platform, our Customer Service team will conduct a verification call to the provided phone number.</li>
+                    <li>Orders will only be processed and handed over to the courier <strong>after successful telephone verification</strong>. Unverified orders will be automatically cancelled after 48 hours.</li>
+                  </ul>
+                </div>
+
+                <div className="space-y-3">
+                  <h4 className="font-extrabold text-slate-900 border-b border-slate-100 pb-2">3. Delivery & Inspection</h4>
+                  <ul className="list-disc pl-5 space-y-1 text-slate-600">
+                    <li>The courier rider will collect the exact invoice amount in cash before handing over the parcel.</li>
+                    <li><strong className="text-rose-600">Strict Courier Policy:</strong> Open-parcel delivery (checking the contents before payment) is not permitted by our third-party logistics partners (TCS, Leopard, CallCourier). You must pay the rider first to receive the package.</li>
+                    <li>If you encounter any discrepancies or damages after opening the parcel, please contact our support team immediately within 24 hours under our 7-Day Return and Exchange policy.</li>
+                  </ul>
+                </div>
+
+                <div className="space-y-3">
+                  <h4 className="font-extrabold text-slate-900 border-b border-slate-100 pb-2">4. Refusal of Delivery</h4>
+                  <ul className="list-disc pl-5 space-y-1 text-slate-600">
+                    <li>We reserve the right to disable the COD option for customer accounts that show a history of refusing verified orders at the doorstep. Future orders from such accounts will require 100% advance payment.</li>
+                  </ul>
+                </div>
+                
+                <p className="pt-4 text-[12px] text-slate-500 italic border-t border-slate-100">
+                  By selecting the "Cash on Delivery" payment method at checkout, you agree to abide by these terms. If you have any further questions, please reach out to our support channels.
+                </p>
+
+              </div>
+            </div>
+            
+            {/* Modal Footer */}
+            <div className="p-4 border-t border-slate-100 bg-slate-50 flex justify-end">
+              <button
+                onClick={() => setIsCodPolicyModalOpen(false)}
+                className="bg-slate-900 hover:bg-slate-800 text-white py-2.5 px-6 rounded-xl text-xs font-black uppercase tracking-wider transition-colors shadow-sm"
+              >
+                Understood & Close
+              </button>
             </div>
           </div>
         </div>
